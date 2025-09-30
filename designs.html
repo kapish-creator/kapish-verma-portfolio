@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapish Verma - Design Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background-dark': '#0f172a',
+                        'card-dark': '#1e293b',
+                        'accent-teal': '#14b8a6',
+                        'text-light': '#f1f5f9',
+                        'text-muted': '#94a3b8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .design-card {
+            /* Ensures the card doesn't zoom out of its frame */
+            overflow: hidden; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .design-card:hover {
+            transform: scale(1.03); /* Subtle zoom effect on hover */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+        /* Ensure images fit the 1:1 aspect ratio perfectly */
+        .design-image {
+            width: 100%;
+            /* Fixed aspect ratio using padding-bottom trick for clean grid */
+            padding-bottom: 100%; 
+            position: relative;
+        }
+        .design-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-sans text-text-light antialiased">
+
+    <header class="sticky top-0 z-50 bg-card-dark shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-accent-teal hover:text-text-light transition duration-300">
+                Home
+            </a>
+            <nav>
+                 </nav>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-extrabold text-center mb-12 text-accent-teal" data-aos="fade-up">Creative Design Portfolio</h1>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\1.png" target="_blank" class="design-card bg-card-dark rounded-xl border border-card-dark" data-aos="fade-up" data-aos-delay="100">
+                    <div class="design-image">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\1.png " alt="Design Project 1" class="object-cover">
+                    </div>
+                </a>
+
+                <a href="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\bold.png" target="_blank" class="design-card bg-card-dark rounded-xl border border-card-dark" data-aos="fade-up" data-aos-delay="200">
+                    <div class="design-image">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\bold.png" alt="Design Project 2" class="object-cover">
+                    </div>
+                </a>
+
+                <a href="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\3.png" target="_blank" class="design-card bg-card-dark rounded-xl border border-card-dark" data-aos="fade-up" data-aos-delay="300">
+                    <div class="design-image">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\3.png" alt="Design Project 3" class="object-cover">
+                    </div>
+                </a>
+                
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-extrabold text-center mb-12 text-accent-teal" data-aos="fade-up"></h1>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\4.png" target="_blank" class="design-card bg-card-dark rounded-xl border border-card-dark" data-aos="fade-up" data-aos-delay="100">
+                    <div class="design-image">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\4.png " alt="Design Project 1" class="object-cover">
+                    </div>
+                </a>
+
+                <a href="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\5.png" target="_blank" class="design-card bg-card-dark rounded-xl border border-card-dark" data-aos="fade-up" data-aos-delay="200">
+                    <div class="design-image">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\5.png" alt="Design Project 2" class="object-cover">
+                    </div>
+                </a>
+
+                <a href="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\6.png" target="_blank" class="design-card bg-card-dark rounded-xl border border-card-dark" data-aos="fade-up" data-aos-delay="300">
+                    <div class="design-image">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\designs\6.png" alt="Design Project 3" class="object-cover">
+                    </div>
+                </a>
+                
+                </div>
+            </div>
+    </main>
+
+    <footer class="bg-card-dark text-text-muted py-8 border-t border-background-dark mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; 2024 Kapish Verma. Design Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+    </script>
+</body>
+</html>

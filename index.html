@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associate Analyst & Designer Portfolio - [Your Name]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background-dark': '#0f172a', // Primary Dark Background (Slate 900)
+                        'card-dark': '#1e293b',      // Secondary Dark Surface (Slate 800)
+                        'accent-teal': '#14b8a6',    // Bright Teal Accent
+                        'text-light': '#f1f5f9',     // Light Text (Slate 100)
+                        'text-muted': '#94a3b8',     // Muted Text
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom scroll behavior for smooth transitions */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for the nav items */
+        .nav-item {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .nav-item:hover {
+            color: #14b8a6; /* accent-teal on hover */
+        }
+        /* Style for the project cards on hover */
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+            
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-background-dark font-sans text-text-light antialiased">
+
+    <header class="sticky top-0 z-50 bg-card-dark shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center flex-wrap">
+        <a href="#hero" class="text-2xl font-extrabold text-accent-teal hover:text-text-light transition duration-300">
+            Home
+        </a>
+        <nav id="mobile-menu-links" class="hidden md:flex space-x-8 text-lg font-medium">
+            <a href="#about" class="nav-item text-text-light block p-2">About</a>
+            <a href="#skills" class="nav-item text-text-light block p-2">Expertise</a>
+            <a href="designs.html" class="nav-item text-text-light block p-2">Designs</a>
+            <a href="#projects" class="nav-item text-text-light block p-2">Projects</a>
+            <a href="#contact" class="nav-item text-text-light block p-2">Contact</a>
+        </nav>
+        <button class="md:hidden p-2 rounded-lg text-accent-teal border border-accent-teal" onclick="toggleMobileMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+</header>
+
+    <main>
+        <section id="hero" class="py-24 md:py-40 bg-background-dark border-b border-card-dark" data-aos="fade-in" data-aos-duration="1000">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+                </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
+                        <span class="text-text-muted text-4xl block md:inline-block font-medium mb-2">Hello, I'm</span> 
+                        <span class="text-accent-teal block">Kapish Verma</span>
+                    </h1>
+                    <p class="text-2xl md:text-3xl font-light mb-6 text-text-light">
+                        Associate Analyst | Graphic Designer | Social Media Manager
+                    </p>
+                    <p class="text-lg text-text-muted mb-8">
+                        I bridge the gap between data-driven insights and compelling visual communication to deliver holistic, effective solutions.
+                    </p>
+                    
+                    <div class="flex justify-center md:justify-start items-center space-x-4">
+                        <a href="#projects" class="inline-block px-8 py-3 bg-accent-teal text-background-dark font-bold rounded-full shadow-lg hover:bg-teal-300 transition duration-300 transform hover:scale-105">
+                            View My Portfolio
+                        </a>
+                        <a href="https://www.linkedin.com/in/kapish-verma-287b33304" target="_blank" class="p-3 text-text-light hover:text-accent-teal transition duration-300 rounded-full border-2 border-accent-teal hover:bg-card-dark" aria-label="LinkedIn Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.366-4-3.235-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                    </div>
+
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="https://i.postimg.cc/Nff2wcfc/Whats-App-Image-2025-09-15-at-6-56-08-PM.jpg" 
+                         alt="Professional Profile Photo" 
+                         class="rounded-full border-4 border-accent-teal shadow-2xl object-cover object-[center_-1rem] w-64 h-64 md:w-80 md:h-80">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-card-dark" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-12 text-accent-teal">About My Multi-Disciplinary Approach</h2>
+        <div class="max-w-4xl mx-auto text-lg text-text-light leading-relaxed space-y-6 text-justify">
+            <p>
+                My professional identity is built on a rare combination of Analytical Rigor, Creative Execution, and Strategic Communication. As an Associate Analyst, I specialize in utilizing data modeling, machine learning, and statistical methods to solve complex educational and operational challenges.
+            </p>
+            <p>
+                Complementing my analytical work, I have a strong foundation as a Graphic Designer, having collaborated with various companies to develop visual branding and high-impact marketing materials. This design expertise ensures that insights are not just accurate, but also beautifully and clearly communicated.
+            </p>
+            <p>
+                Furthermore, my experience as a Social Media Manager has honed my ability to understand target audiences, drive engagement, and translate brand strategy into actionable content plans, completing the loop from data analysis to public reach.
+            </p>
+            <div class="pt-4 flex justify-center space-x-6">
+                <a href="https://drive.google.com/file/d/1EJOLentW_zV_EMTFjTDTocUOIF1ReOYS/view?usp=drive_link" class="text-accent-teal hover:text-text-light transition duration-300 font-medium border-b border-accent-teal pb-1" target="_blank">View Resume (PDF)</a>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <hr class="max-w-6xl mx-auto border-t border-background-dark">
+
+        <section id="skills" class="py-16 md:py-24 bg-background-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-accent-teal" data-aos="fade-up">Core Expertise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <div class="bg-card-dark p-6 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-300 border-t-4 border-accent-teal" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold mb-3 text-text-light">📊 Data & Analysis</h3>
+                        <p class="text-text-muted mb-4">Leveraging Python and statistical models for predictive and diagnostic analysis.</p>
+                        <ul class="list-disc list-inside space-y-1 text-text-light">
+                            <li>Machine Learning (Regression/Classification)</li>
+                            <li>Data Visualization (Matplotlib, Tableau)</li>
+                            <li>Python (Pandas, Scikit-learn)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-card-dark p-6 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-300 border-t-4 border-accent-teal" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold mb-3 text-text-light">🎨 Creative Design</h3>
+                        <p class="text-text-muted mb-4">Translating complex ideas into clean, engaging visual assets for brand identity.</p>
+                        <ul class="list-disc list-inside space-y-1 text-text-light">
+                            <li>Adobe Photoshop, Premiere Pro</li>
+                            <li>UI/UX Prototyping (Figma)</li>
+                            <li>Print & Digital Media Production</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-card-dark p-6 rounded-xl shadow-lg transform hover:scale-[1.02] transition duration-300 border-t-4 border-accent-teal" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold mb-3 text-text-light">🚀 Digital Strategy</h3>
+                        <p class="text-text-muted mb-4">Managing digital presence and driving measurable engagement across platforms.</p>
+                        <ul class="list-disc list-inside space-y-1 text-text-light">
+                            <li>Content Strategy & Management</li>
+                            <li>Social Media Optimization (SMO)</li>
+                            <li>Audience Analysis & Reporting</li>
+                            <li>Community Engagement & Growth</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="py-16 md:py-24 bg-card-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-accent-teal" data-aos="fade-up">Featured Work </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <div class="project-card bg-background-dark rounded-xl shadow-lg overflow-hidden border border-background-dark transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\cgpa.png" 
+                             alt="CGPA Screenshot" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-accent-teal mb-2">Predictive CGPA Modeling</h3>
+                            <p class="text-text-muted mb-4">
+                                Developed a machine learning model (Linear Regression/Random Forest) to forecast student CGPA based on initial performance metrics, enabling proactive academic intervention.
+                            </p>
+                            <div class="flex flex-wrap space-x-2 mb-4">
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Data Science</span>
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Python</span>
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Predictive Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="project-card bg-background-dark rounded-xl shadow-lg overflow-hidden border border-background-dark transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\facial.png" 
+                             alt="Facial Recognition System Screenshot" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-accent-teal mb-2">Secure Facial Recognition System</h3>
+                            <p class="text-text-muted mb-4">
+                                Built a real-time facial recognition module for secure access/attendance tracking, optimizing operational efficiency and security protocols in a simulated environment.
+                            </p>
+                            <div class="flex flex-wrap space-x-2 mb-4">
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Computer Vision</span>
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">OpenCV</span>
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Security</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-background-dark rounded-xl shadow-lg overflow-hidden border border-background-dark transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\exam.png" 
+                             alt="LMS and Exam Paper Evaluation Screenshot" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-accent-teal mb-2">Automated Exam Evaluation</h3>
+                            <p class="text-text-muted mb-4">
+                                Developed scripts for automated exam paper grading and integrated the data into an LMS (Learning Management System) for centralized result analysis and reporting.
+                            </p>
+                            <div class="flex flex-wrap space-x-2 mb-4">
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Automation</span>
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">LMS</span>
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Data Processing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card bg-background-dark rounded-xl shadow-lg overflow-hidden border border-background-dark transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <img src="C:\Users\kapish verma\OneDrive\Desktop\Kapish Portfolio\smm.png" 
+                             alt="Design and Social Media Marketing Case Study" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-accent-teal mb-2">Client Branding & SMM Strategy</h3>
+                            <p class="text-text-muted mb-4">
+                                Managed social media campaigns for AlgoForge Studios, resulting in a 30% increase in engagement. Designed all associated digital marketing assets and cohesive brand identity.
+                            </p>
+                            <div class="flex flex-wrap space-x-2 mb-4">
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Graphic Design</span>
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">SMM</span>
+                                <span class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-background-dark bg-accent-teal">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-block px-8 py-3 bg-card-dark text-accent-teal border border-accent-teal font-bold rounded-lg shadow-lg hover:bg-accent-teal hover:text-background-dark transition duration-300 transform hover:scale-105">
+                        Discuss Collaboration
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24 bg-background-dark" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center mb-12 text-accent-teal">Get in Touch</h2>
+        <div class="max-w-xl mx-auto bg-card-dark p-8 md:p-10 rounded-xl shadow-2xl border border-background-dark">
+            <p class="text-center text-lg text-text-light mb-6">
+                I am currently open to opportunities in data analysis, design consulting, or digital strategy.
+            </p>
+            <form id="contactForm" onsubmit="handleFormSubmission(event)">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-text-muted mb-1">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-card-dark bg-background-dark text-text-light rounded-lg focus:ring-accent-teal focus:border-accent-teal transition duration-150" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-text-muted mb-1">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-card-dark bg-background-dark text-text-light rounded-lg focus:ring-accent-teal focus:border-accent-teal transition duration-150" placeholder="your.email@example.com">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-sm font-medium text-text-muted mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-card-dark bg-background-dark text-text-light rounded-lg focus:ring-accent-teal focus:border-accent-teal transition duration-150 resize-none" placeholder="Let's discuss how data and design can elevate your project..."></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-3 bg-accent-teal text-background-dark font-bold rounded-lg shadow-md hover:bg-teal-300 transition duration-300 transform hover:scale-[1.01]">
+                    Send Message
+                </button>
+            </form>
+            
+            <div id="contact-message" class="mt-4 p-4 rounded-lg text-center font-medium hidden transition duration-300"></div>
+
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="bg-card-dark text-text-muted py-8 border-t border-background-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; 2024 KapishWork. All rights reserved. Analyst | Designer | SMM</p>
+            </div>
+    </footer>
+
+    <script>
+
+    const FORMSPREE_URL = 'https://formspree.io/f/xqaypjqw'; 
+
+    function handleFormSubmission(event) {
+        event.preventDefault(); // Prevents the default HTML form submission (the redirection)
+        
+        const form = document.getElementById('contactForm');
+        const formData = new FormData(form);
+        const name = formData.get('name');
+        const messageBox = document.getElementById('contact-message');
+
+        // Reset and show loading state (optional)
+        messageBox.classList.remove('hidden', 'bg-green-100', 'text-green-700', 'bg-red-900', 'text-red-300');
+        messageBox.textContent = 'Sending message...';
+        messageBox.classList.add('bg-card-dark', 'text-accent-teal'); // Temporary loading color
+
+        // Send the data using JavaScript's fetch API
+        fetch(FORMSPREE_URL, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // SUCCESS: Update message box for success
+                messageBox.classList.remove('bg-card-dark', 'text-accent-teal');
+                messageBox.classList.add('bg-accent-teal', 'text-background-dark');
+                messageBox.textContent = `Thank you, ${name}! Your response has been sent.`;
+                
+                // Clear the form fields
+                form.reset();
+            } else {
+                // FAILURE: Handle submission errors (e.g., failed validation, bad URL)
+                messageBox.classList.remove('bg-card-dark', 'text-accent-teal');
+                messageBox.classList.add('bg-red-900', 'text-red-300');
+                messageBox.textContent = 'Oops! There was an issue sending your message.';
+            }
+        })
+        .catch(error => {
+            // NETWORK FAILURE: Handle issues like no internet connection
+            messageBox.classList.remove('bg-card-dark', 'text-accent-teal');
+            messageBox.classList.add('bg-red-900', 'text-red-300');
+            messageBox.textContent = 'Network error: Could not reach the server.';
+        })
+        .finally(() => {
+            // Hide the message after 5 seconds
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+            }, 5000);
+        });
+    }
+
+    // Add smooth scrolling to all internal links (kept for functionality)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    // Function to toggle the mobile menu visibility
+    function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu-links');
+    menu.classList.toggle('hidden');
+    
+    if (!menu.classList.contains('hidden')) {
+        // UPDATED CLASSES: Removed 'text-center' for left alignment. Adjusted padding/spacing.
+        menu.classList.add('flex', 'flex-col', 'w-full', 'py-2', 'px-4', 'space-y-1', 'bg-card-dark');
+    } else {
+        // Ensure classes are properly removed on close
+        menu.classList.remove('flex', 'flex-col', 'w-full', 'py-2', 'px-4', 'space-y-1', 'bg-card-dark');
+    }
+}
+
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
+        easing: 'ease-in-out', // default easing for AOS animations
+        once: true, // whether animation should happen only once - true is ideal for portfolio scrolling
+        mirror: false, // whether elements should animate out while scrolling past them
+    });
+</script>
+
+</body>
+</html>
